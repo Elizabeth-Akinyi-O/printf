@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 					string = va_arg(args_ptr, char *);
 					num_chars += format_string(string);
 				}
-				else if (*format == 'd' || *format == 'i')
+				else if (*format == 'd')
 				{
 					num = va_arg(args_ptr, int);
 					num_chars += format_num(num);
