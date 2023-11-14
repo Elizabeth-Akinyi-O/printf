@@ -10,5 +10,6 @@ int _printf(const char *format, ...);
 int format_char(char c);
 int format_percent();
 int format_string(char* s);
+int format_num(int);
 
 #endif
