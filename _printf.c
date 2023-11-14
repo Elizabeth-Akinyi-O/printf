@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _printf - Produces output according to a format
  * @format: char *. The format string
@@ -36,7 +35,7 @@ int _printf(const char *format, ...)
 					string = va_arg(args_ptr, char *);
 					num_chars += format_string(string);
 				}
-				else if (*format == 'd')
+				else if (*format == 'd' || *format == 'i')
 				{
 					num = va_arg(args_ptr, int);
 					num_chars += format_num(num);
